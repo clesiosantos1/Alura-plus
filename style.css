@@ -3,11 +3,15 @@
     --sinza-secondario: #c0c0c0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030c;
+    --font-item-principal: 'Inter';
 }
 
 body{
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-size: 16px;
+    font-family: var(--font-item-principal);
+    font-weight: 400;
 }
 
 *{
@@ -19,16 +23,119 @@ body{
     background-image: url('img/Background.png');
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container{
     height: 100vh;
+    display: grid; /* usando grid */
+    grid-template-columns: 50% 25% 25%;  /* diminui a largura de um botao */
 }
 
 .container__botao{
     background-color: var(--botao-azul);
     border-radius: 5px;
-    padding: 1em; /* margem interna */
+    padding: 1em;
     color: var(--branco-principal);
     display: block;
+    text-decoration: none;
+    margin-bottom: 1em; /* espaçamento pa baixo */
+}
+
+.botao__secondario{
+    background-color: transparent;
+  border:  2px solid var(--branco-principal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--sinza-secondario);
+}
+
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+}
+
+.descricao__texto{
+    color: var(--sinza-secondario);
+    font-size: 15px;
+    width: 464px;
+}
+
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+
+.container__descricao{
+    padding: 2em;
+}
+
+.container-fluid1{
+    text-align: center;
+}
+
+.nivel{
+    margin-bottom: 1em;
+    font-size: 48px;
+}
+
+.alura{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+}
+.conte{
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.conte a{
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.conte a:hover{
+color: var(--botao-azul);
+}
+
+.lingua{
+    color: var(--sinza-secondario);
+    margin-bottom: 1em;
 }
